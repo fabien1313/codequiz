@@ -8,7 +8,7 @@ body {
 }
 
 
-#container {
+#container-0, #container-1, #container-2, #container-3, #container-4 {
     background-color: purple;
     text-align: center;
     align-items: center;
@@ -20,7 +20,6 @@ body {
     border: 5px solid ;
     box-shadow: 2px 2px 10px 5px gray;
     border-radius: 15%;
-
 }
 
 h1, button {
@@ -47,4 +46,8 @@ button:hover {
 
 .questions {
     display: block;
+}
+
+.hide {
+    display: none;
 }
