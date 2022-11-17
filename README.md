@@ -8,11 +8,9 @@ Upon completing the quiz or when the timer hits 0 you will be taken to a highsco
 
 ## Technologies
 
-Languages  |
-------------- 
-HTML  
-CSS
-JavaScript 
+- HTML  
+- CSS
+- JavaScript 
 
 ## Credits
 
