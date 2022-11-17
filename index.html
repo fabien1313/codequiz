@@ -20,13 +20,13 @@
             <div id="score">HighScore</div>
         </div>
         <div>
-            <div id="timer">Timer</div>
+            <div id="timer">Timer<br>0:30</div>
         </div>
     </section>
 
     <section id="container-0">
         <div>
-            <h1>Lets play a game</h1>
+            <h1>JavaScript Code Quiz</h1>
         </div>
         <div>
             <button id="start-btn">Start</button>
@@ -43,12 +43,12 @@
             </div>
         </div>
         <div>
-            <button id="qOne" class="questions">compiling</button>
-            <button id="qTwo" class="questions">Executing</button>
+            <button id="qOne" data-incorrect="incorrect" class="questions">compiling</button>
+            <button id="qTwo" data-incorrect="incorrect" class="questions">Executing</button>
         </div>
         <div>
             <button id="qThree" data-correct="correct" class="questions correct">Debugging</button>
-            <button id="qFour" class="questions">Scanning</button>
+            <button id="qFour" data-incorrect="incorrect" class="questions">Scanning</button>
         </div>
     </section>
 
@@ -63,12 +63,12 @@
             </div>
         </div>
         <div>
-            <button id="quOne" class="questions">Pair programming</button>
-            <button id="quTwo" class="questions">Deleting, developing new program</button>
+            <button id="quOne" data-incorrect="incorrect" class="questions">Pair programming</button>
+            <button id="quTwo" data-incorrect="incorrect" class="questions">Deleting, developing new program</button>
         </div>
         <div>
             <button id="quThree" data-correct="correct" class="questions">Consolidating and improving while preserving functionality</button>
-            <button id="quFour" class="questions">Add web and third-party API</button>
+            <button id="quFour" data-incorrect="incorrect" class="questions">Add web and third-party API</button>
         </div>
     </section>
 
@@ -83,14 +83,14 @@
             </div>
         </div>
         <div>
-            <button id="queOne" class="questions">Class refers to students and ID is your identity card</button>
+            <button id="queOne" data-incorrect="incorrect" class="questions">Class refers to students and ID is your identity card</button>
             <button id="queTwo" data-correct="correct" class="questions correct">Class can be used multiple times to apply CSS whereas ID is a one time unique
                 identifier</button>
         </div>
         <div>
-            <button id="queThree" class="questions">Class changes the ranking in elements while ID logs the identity of
+            <button id="queThree" data-incorrect="incorrect" class="questions">Class changes the ranking in elements while ID logs the identity of
                 the element in the console</button>
-            <button id="queFour" class="questions">Class is a fancy name for organization within the HTML file whereas
+            <button id="queFour" data-incorrect="incorrect" class="questions">Class is a fancy name for organization within the HTML file whereas
                 ID is a unique identifier for CSS</button>
         </div>
     </section>
@@ -106,12 +106,12 @@
             </div>
         </div>
         <div>
-            <button id="quesOne" class="questions">Close statement</button>
+            <button id="quesOne" data-incorrect="incorrect" class="questions">Close statement</button>
             <button id="quesTwo" data-correct="correct" class="questions correct">Break statement</button>
         </div>
         <div>
-            <button id="quesThree" class="questions">Conditional statement</button>
-            <button id="quesFour" class="questions">If statement</button>
+            <button id="quesThree" data-incorrect="incorrect" class="questions">Conditional statement</button>
+            <button id="quesFour" data-incorrect="incorrect" class="questions">If statement</button>
         </div>
     </section>
 
@@ -126,12 +126,12 @@
             </div>
         </div>
         <div>
-            <button id="questOne" class="questions">link</button>
-            <button id="questTwo" class="questions">.js</button>
+            <button id="questOne" data-incorrect="incorrect" class="questions">link</button>
+            <button id="questTwo" data-incorrect="incorrect" class="questions">.js</button>
         </div>
         <div>
             <button id="questThree" data-correct="correct" class="questions correct">script</button>
-            <button id="questFour" class="questions">hreft</button>
+            <button id="questFour" data-incorrect="incorrect" class="questions">hreft</button>
         </div>
     </section>
 
@@ -151,6 +151,10 @@
                 <br><br><br><br>
                 <p id="placeHere"></p>
                 <p id="placeHere-two"></p>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <div>
+                <button id="home-btn">Home</button>
             </div>
         </div>
     </section>

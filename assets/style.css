@@ -55,13 +55,25 @@ h1 {
 
 #placeHere, #placeHere-two {
     color:white;
-    text-align: left;
+    float: left;
     display: inline;
     align-items: left;
+    margin-left: 10px;
 }
 
 h3, h4 {
     color:white;
+}
+
+#home-btn {
+    padding:10px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px 5px gray;
+    border: 2px solid #9200C8;
+    border-radius: 12px;
+
 }
 
 button {
@@ -73,6 +85,10 @@ button {
 }
 
 button:hover {
+    background-color: gray;
+}
+
+#score:hover {
     background-color: gray;
 }
 

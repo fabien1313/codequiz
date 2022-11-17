@@ -30,9 +30,11 @@ var aTwo = document.getElementById('questTwo');
 var aThree = document.getElementById('questThree');
 var aFour = document.getElementById('questFour');
 var correct = document.querySelectorAll("correct");
-
 var displayText = document.getElementById('here');
 var btn = document.getElementById('btn');
+var homeBtn = document.getElementById('home-btn');
+
+
 
 var finalScore = [];
 
@@ -54,10 +56,19 @@ function countDown() {
             timeLeft--;
         } else if (timeLeft === 1) {
             timerText.textContent = timeLeft + ' seconds remaining';
-            timeLeft--;
+            timeLeft--;  
         } else {
             timerText.textContent = 'Timer';
             clearInterval(timeInterval);
+            startContainer.classList.add('hide')
+            questionOne.classList.add('hide')
+            questionTwo.classList.add('hide')
+            questionThree.classList.add('hide')
+            questionFour.classList.add('hide')
+            questionFive.classList.add('hide')
+            timerText.classList.add('hide')
+            scoreText.classList.add('hide')
+            scorePage.classList.remove('hide') 
         }
     }, 1000);
 }
@@ -73,9 +84,17 @@ function startGame() {
 
 function secondQuestion(event) {
     var target = event.target.getAttribute('data-correct');
+    // var wrongTarget = event.target.getAttribute('data-incorrect');
     if (target === 'correct' ) {
         score += 20; 
     }
+    
+    // else {
+    //     timeLeft -= 5;
+        
+    // }
+
+    
 
     if (answerOne || answerTwo || answerThree || answerFour) {
         questionOne.classList.add('hide')
@@ -157,8 +176,9 @@ function highScore(event) {
 
 btn.addEventListener('click', function(event){
     event.preventDefault();
-    var displayed = document.getElementById('here');
+
     
+    var displayed = document.getElementById('here');
 
     var initialsText = document.getElementById('test').value;
     var ScoreFinal = document.getElementById('score-final').value;
@@ -177,11 +197,33 @@ btn.addEventListener('click', function(event){
 
     showText.textContent = initialsText;
     showText2.textContent = ScoreFinal;
+});
 
 
 
+scoreText.addEventListener('click', function(){
+    startContainer.classList.add('hide')
+    questionOne.classList.add('hide')
+    questionTwo.classList.add('hide')
+    questionThree.classList.add('hide')
+    questionFour.classList.add('hide')
+    questionFive.classList.add('hide')
+    timerText.classList.add('hide')
+    scoreText.classList.add('hide')
+    scorePage.classList.remove('hide')
+});
+
+
+
+homeBtn.addEventListener('click', function () {
+    location.reload();
 
 });
+
+
+
+
+
 
 
 
