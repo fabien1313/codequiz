@@ -18,7 +18,7 @@ Upon completing the quiz or when the timer hits 0 you will be taken to a highsco
 - Background photo by Bestami Sarikaya https://unsplash.com/@bbestamis 
 
 ## Screenshots (Deployable Page Link)
-Deployed page: 
+Deployed page: https://fabien1313.github.io/codequiz/
 
 ![](assets/images/code1.png)
 ![](assets/images/code2.png)
